@@ -40,28 +40,3 @@ ecommwebpage/
 │
 ├── package.json            # Node.js dependencies
 └── README.md               # Project documentation (this file)
-Installation and Setup
-Follow these steps to run the project locally:
-
-
-
-cd ecommwebpage
-Install Backend Dependencies
-Install the required Node.js packages:
-
-npm install
-Start MongoDB
-Ensure MongoDB is running on your system:
-
-
-sudo systemctl start mongod
-Run the Server
-Start the Express server:
-
-
-node Backend/server.js
-Access the Web Application
-Open your browser and visit:
-
-
-http://localhost:3001
