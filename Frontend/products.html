@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Products</title>
+  <link rel="stylesheet" href="styles/product.css">
+  <script defer src="scripts/cart.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+  <header>
+    <div class="logo">ShopEasy</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products" class="active">Products</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products-page">
+    <h1>Our Products</h1>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=60" alt="Bag">
+        <h3>Bag</h3>
+        <p class="price" data-price="10">$10.00</p>
+        <button onclick="addToCart('Bag', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=600&auto=format&fit=crop&q=60" alt="Pant">
+        <h3>Pant</h3>
+        <p class="price" data-price="20">$20.00</p>
+        <button onclick="addToCart('Pant', 20)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=60" alt="Shoes">
+        <h3>Shoes</h3>
+        <p class="price" data-price="30">$30.00</p>
+        <button onclick="addToCart('Shoes', 30)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://media.istockphoto.com/id/1345634525/photo/young-man-in-blank-oversize-t-shirt-mockup-front-and-back-used-as-design-template-isolated-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ecdek1PYFo7Nie8wopEZJNMJPC_HZcguXGJsl7GV8ZA=" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p class="price" data-price="40">$40.00</p>
+        <button onclick="addToCart('T-Shirt', 40)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&auto=format&fit=crop&q=60" alt="Watch">
+        <h3>Watch</h3>
+        <p class="price" data-price="50">$50.00</p>
+        <button onclick="addToCart('Watch', 50)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=60" alt="Laptop">
+        <h3>Laptop</h3>
+        <p class="price" data-price="60">$60.00</p>
+        <button onclick="addToCart('Laptop', 60)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <p>No items in the cart.</p>
+    </div>
+    <div id="cart-summary">
+      <p><strong>Total Quantity:</strong> <span id="total-quantity">0</span></p>
+      <p><strong>Total Price:</strong> $<span id="total-price">0.00</span></p>
+      <button id="payment">Payment</button>
+    </div>
+  </section>
+            
+    <footer>
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
